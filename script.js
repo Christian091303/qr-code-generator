@@ -37,7 +37,6 @@ function downloadQRCode() {
   link.download = filename + ".png";
   link.click();
 
-  // ✅ Auto-clear after download (instead of full reload)
   setTimeout(() => {
     document.getElementById("text").value = "";
     if (document.getElementById("filename")) {
